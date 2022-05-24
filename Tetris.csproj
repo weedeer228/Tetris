@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<UseWindowsForms>False</UseWindowsForms>
+		<StartupObject></StartupObject>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Remove="Data\images\background.png" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="XamlRadialProgressBar" Version="1.0.3" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="Microsoft.Toolkit">
+			<HintPath>..\..\..\.nuget\packages\microsoft.toolkit\7.1.2\lib\net5.0\Microsoft.Toolkit.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	<ItemGroup>
+		<Resource Include="Data\images\background.png" />
+	</ItemGroup>
+</Project>
